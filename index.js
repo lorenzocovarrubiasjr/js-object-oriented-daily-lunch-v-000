@@ -2,7 +2,7 @@
 let store = { neighborhoods: [], meals: [], customers: [], deliveries: [] };
 
 let   neighborhoodId = 0;
-class Neigborhood {
+class Neigborhood(){
 
     constructor(name){
       this.name = name;
@@ -27,7 +27,7 @@ class Neigborhood {
 }
 
 let customerId = 0;
-class Customer {
+class Customer() {
     constructor(name, neighborhoodId){
       this.name = name,
       this.neighborhoodId = neighborhoodId;
