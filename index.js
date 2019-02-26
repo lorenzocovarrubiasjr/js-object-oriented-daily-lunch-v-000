@@ -75,7 +75,7 @@ class Meal{
   }
 
   static byPrice(){
-    let sortedMeals = store.meals.sort(function(a,b){
+    return store.meals.sort(function(a,b){
       if (a.price > b.price)
         return -1;
       if (a.price < b.price)
