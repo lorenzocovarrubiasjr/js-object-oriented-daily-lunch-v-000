@@ -44,7 +44,7 @@ class Customer {
 
     meals(){
       return this.deliveries().filter(function(delivery){
-        return delivery.mealId
+        return delivery.meal()
       })
 
 
