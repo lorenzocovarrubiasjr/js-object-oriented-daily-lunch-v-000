@@ -46,12 +46,6 @@ class Customer {
       return this.deliveries().map(function(delivery){
         return delivery.meal()
       })
-
-
-
-      store.meals.filter(function(meal){
-        return meal.id === this.id;
-      }.bind(this));
     }
 
     totalSpent(){
