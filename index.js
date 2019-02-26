@@ -47,7 +47,6 @@ class Customer {
         return meal.customerId === this.id;
       }.bind(this));
     }
-    }
 
     totalSpent(){
 
