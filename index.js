@@ -27,7 +27,7 @@ class Neighborhood{
         return delivery.meal();
       }));
 
-      return uniqueMeals.entries;
+     return [...uniqueMeals];
     }
 }
 
