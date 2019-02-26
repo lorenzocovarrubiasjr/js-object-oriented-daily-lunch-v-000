@@ -82,7 +82,9 @@ class Delivery{
   }
 
   meal(){
-
+    return store.meals.filter(function(meal){
+      return meal.id === this.mealId;
+    }.bind(this));
   }
 
   customer(){
