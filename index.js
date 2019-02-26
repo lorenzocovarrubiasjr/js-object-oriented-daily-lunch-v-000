@@ -23,8 +23,8 @@ class Neighborhood{
     }
 
     meals(){
-      return new Set(this.deliveries().map(function(delivery){
-        return delivery.meal;
+       new Set(this.deliveries().map(function(delivery){
+        return delivery.meal();
       }));
     }
 }
