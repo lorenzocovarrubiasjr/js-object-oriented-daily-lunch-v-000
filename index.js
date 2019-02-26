@@ -77,4 +77,16 @@ class Delivery(){
     this.id = ++deliveryId;
     store.deliveries.push(this);
   }
+
+  meal(){
+    
+  }
+
+  customer(){
+    
+  }
+
+  neighborhood(){
+    
+  }
 }
