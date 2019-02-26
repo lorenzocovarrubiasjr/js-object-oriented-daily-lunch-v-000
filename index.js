@@ -43,8 +43,14 @@ class Customer {
     }
 
     meals(){
-      return store.meals.filter(function(meal){
-        return meal.customerId === this.id;
+      return this.deliveries().filter(function(delivery){
+        return delivery.mealId
+      })
+
+
+
+      store.meals.filter(function(meal){
+        return meal.id === this.id;
       }.bind(this));
     }
 
