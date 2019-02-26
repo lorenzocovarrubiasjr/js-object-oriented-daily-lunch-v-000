@@ -75,7 +75,9 @@ class Meal{
   }
 
   customers(){
-
+    return this.deliveries().map(function(delivery){
+      return delivery.customerId;
+    })
   }
 
   byPrice(){
