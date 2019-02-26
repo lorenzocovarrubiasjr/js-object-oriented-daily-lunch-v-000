@@ -75,15 +75,19 @@ class Meal{
   }
 
   static byPrice(){
-    return store.meals.sort(function(a,b){
+    let sortedMeals = store.meals.sort(function(a,b){
       if (a.price < b.price)
         return -1;
       if (a.price > b.price)
         return 0;
       return 0;
-    }).map(function(meal){
+    })
+
+    let sortedMealsTitels = sortedMeals.map(function(meal){
       return meal.title;
     })
+
+    return sortedMealsTitels;
   }
 }
 
