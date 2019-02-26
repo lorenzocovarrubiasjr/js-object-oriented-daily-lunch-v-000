@@ -48,7 +48,7 @@ class Customer {
       })
     }
 
-    totalSpent(){
+    static totalSpent(){
       totalSpent = 0;
       this.meals().map(function(meal){
         return totalSpent += meal.price;
