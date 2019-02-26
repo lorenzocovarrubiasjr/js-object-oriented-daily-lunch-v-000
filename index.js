@@ -23,9 +23,11 @@ class Neighborhood{
     }
 
     meals(){
-      return new Set(this.deliveries().map(function(delivery){
+      let uniqueMeals = new Set(this.deliveries().map(function(delivery){
         return delivery.meal();
       }));
+
+      return uniqueMeals;
     }
 }
 
