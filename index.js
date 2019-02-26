@@ -2,7 +2,7 @@
 let store = { neighborhoods: [], meals: [], customers: [], deliveries: [] };
 
 let   neighborhoodId = 0;
-class Neigborhood{
+class Neighborhood{
     constructor(name){
       this.name = name;
       this.id = ++neighborhoodId;
