@@ -11,16 +11,16 @@ class Neigborhood {
     }
 
     deliveries(){
-      
+
     }
 
     customers(){
 
-  
+
     }
 
     meals(){
-    
+
     }
 }
 
@@ -34,15 +34,15 @@ class Customer {
     }
 
     deliveries(){
-      
+
     }
 
     meals(){
-      
+
     }
 
     totalSpent(){
-      
+
     }
 }
 
@@ -55,6 +55,3 @@ class Meal(){
     store.meals.push(this);
   }
 }
-
-
-
