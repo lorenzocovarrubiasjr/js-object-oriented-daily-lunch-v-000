@@ -49,7 +49,11 @@ class Customer {
     }
 
     totalSpent(){
-
+      totalSpent = 0;
+      this.meals().map(function(meal){
+        return totalSpent += meal.price;
+      })
+      return totalSpent;
     }
 }
 
@@ -82,7 +86,6 @@ class Meal{
         return 0;
       return -1;
     })
-
   }
 }
 
