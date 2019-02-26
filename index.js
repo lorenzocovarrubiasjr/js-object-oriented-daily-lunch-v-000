@@ -81,6 +81,8 @@ class Meal{
       if (a.price > b.price)
         return 0;
       return 0;
+    }).map(function(meal){
+      return meal.title;
     })
   }
 }
