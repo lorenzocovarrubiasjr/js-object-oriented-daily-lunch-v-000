@@ -70,7 +70,7 @@ class Meal{
 
   deliveries(){
     return store.deliveries.filter(function(delivery){
-      return delivery.mealId = this.id;
+      return delivery.mealId === this.id;
     }.bind(this));
   }
 
